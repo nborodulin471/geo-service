@@ -35,6 +35,11 @@ public class Location {
 
     @Override
     public boolean equals(Object obj) {
+
+        if(obj == null){
+            return false;
+        }
+
         if (obj.getClass() != Location.class) {
             return false;
         }
@@ -47,5 +52,4 @@ public class Location {
         }
         return false;
     }
-
 }
